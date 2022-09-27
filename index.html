@@ -5,15 +5,21 @@
   <title>Quadro Test</title>
   <meta charset="UTF-8" />
   <script defer src="./src/index.js"></script>
-  <link rel="stylesheet" href="./src/styles.css">
   <link rel="stylesheet" href="./src/detailDrawing.css">
+  <link rel="stylesheet" href="./src/styles.css">
   <link rel="icon" href="https://i.work.ua/employer_design/6/1/2/633612_company_logo_1.png">
 </head>
 
 <body>
+  <!-- <div style="text-align:center;">
+    <canvas id="can" width="350" height="250" style="border:2px solid black ;">
+
+    </canvas>
+  </div> -->
+
   <div id="app">
     <div class="control">
-      <button id="rotateZ">Вращение ⭮</button>
+      <button id="rotate">Вращение ⭮</button>
       <span> Длина детали: </span>
       <input id="lengthInput" placeholder="Длина:" type="text" />
       <span> Ширина детали: </span>
@@ -21,10 +27,17 @@
       <span> Радиус правого угла: </span>
       <input id="rightAngleInput" placeholder="Радиус:" type="text" />
     </div>
-    <div class="detailDrawing">
-      <canvas id="canvas_detail_drawing" width="400" height="300">
-
-      </canvas>
+    <div class="detail">
+      <div class="detailDrawing" id="dDrawing">
+        <span id="height"></span>
+        <canvas id="canvas_detail_drawing" width="0" height="0"></canvas>
+        <span id="width"></span>
+        <span id="radius"></span>
+      </div>
+      <!-- <div id="radius"> -->
+      <!-- <div id="radius1"></div> -->
+      <!-- <div id="radius2"></div> -->
+      <!-- </div> -->
     </div>
   </div>
 

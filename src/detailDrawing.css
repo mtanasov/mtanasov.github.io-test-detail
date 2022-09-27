@@ -1,12 +1,66 @@
 .detailDrawing {
    text-align: center;
-   margin-top: 25px;
+   padding: 50px;
+   /* border: 2px solid green; */
+   height: 0px;
+   width: 0px;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#dDrawing {
+   /* transform: rotate(0deg); */
 }
 
 #canvas_detail_drawing {
-   /* background-color: rgb(181, 179, 149); */
-   width: 400px;
-   height: 300px;
-   border: 3px solid green;
-   padding: 25px;
+   transform: rotate(0deg);
+}
+
+.detail {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#height {
+   transform: rotate(270deg);
+}
+
+#width {
+   position: relative;
+   transform: rotate(0deg);
+}
+
+#radius {
+   position: relative;
+   text-decoration: underline;
+   /* top: -130px; */
+}
+
+#radius1 {
+   display: inline-block;
+   width: 2px;
+   height: 50px;
+   background-color: aqua;
+   position: absolute;
+   top: 97px;
+   right: 100px;
+   border: 2px solid black;
+   /* border-left: 2px solid black; */
+}
+
+#radius2 {
+   display: inline-block;
+   width: 50px;
+   height: 2px;
+   background-color: aqua;
+   position: absolute;
+   top: 10px;
+   right: 100px;
+   border: 2px solid black;
+   /* border-left: 2px solid black; */
 }
